@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Mobile menu -->
+        <div class="top top-mobile">
+          <a href="./index.html" class="nav-logo"
+            ><img src="./images/logo2.png" alt="" />
+          </a>
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-humburger">
+              <use href="./symbol-defs.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle button-close js-close-menu">
+              <svg class="menu-close">
+                <use href="./symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <nav class="container-nav">
+              <ul class="nav-container">
+                <li class="nav-list">
+                  <a href="./index.html" class="nav-item">Головна</a>
+                </li>
+                <li class="nav-list">
+                  <a href="./stryctyra.html" class="nav-item">Структура</a>
+                </li>
+                <li class="nav-list">
+                  <a href="./zakonodavstvo.html" class="nav-item"
+                    >Законодавство</a
+                  >
+                </li>
+                <li class="nav-list">
+                  <a href="./protokolu.html" class="nav-item">Протоколи</a>
+                </li>
+                <li class="nav-list">
+                  <a href="./navch-tren-viddil.html" class="nav-item"
+                    >Навчально-тренувальний відділ</a
+                  >
+                </li>
+                <li class="nav-list">
+                  <a href="./derzhavni-zakypivli.html" class="nav-item"
+                    >Державні закупівлі</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="down-content">
+              <address>
+                <ul class="contacts-container">
+                  <li class="contacts-list">
+                    <a href="tel:+380000000000" class="contacts-item"
+                      >+380000000000
+                    </a>
+                  </li>
+                  <li class="contacts-list">
+                    <a href="mailto:index@mail.com" class="contacts-item mail"
+                      >index@mail.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+        <!-- Tablet-menu -->
+        <div class="top top-tablet">
+          <a href="./index.html" class="nav-logo"
+            >Web <span class="nav-logo-dark"> Studio</span>
+          </a>
+
+          <nav class="nav">
+            <ul class="nav-container">
+              <li class="nav-list">
+                <a href="./index.html" class="nav-item">Головна</a>
+              </li>
+              <li class="nav-list">
+                <a href="./stryctyra.html" class="nav-item">Структура</a>
+              </li>
+              <li class="nav-list">
+                <a href="./zakonodavstvo.html" class="nav-item"
+                  >Законодавство</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./protokolu.html" class="nav-item">Протоколи</a>
+              </li>
+              <li class="nav-list">
+                <a href="./navch-tren-viddil.html" class="nav-item"
+                  >Навчально-тренувальний відділ</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./derzhavni-zakypivli.html" class="nav-item"
+                  >Державні закупівлі</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <address class="contacts">
+            <ul class="contacts-container">
+              <li class="contacts-list">
+                <a href="mailto:info@devstudio.com" class="contacts-item"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-list">
+                <a href="tel:+110001111111" class="contacts-item"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Desktop-menu -->
+        <div class="top top-desktop">
+          <nav class="nav">
+            <a href="./index.html" class="nav-logo"
+              >Web <span class="nav-logo-dark"> Studio</span>
+            </a>
+
+            <ul class="nav-container">
+              <li class="nav-list">
+                <a href="./index.html" class="nav-item">Головна</a>
+              </li>
+              <li class="nav-list">
+                <a href="./stryctyra.html" class="nav-item">Структура</a>
+              </li>
+              <li class="nav-list">
+                <a href="./zakonodavstvo.html" class="nav-item"
+                  >Законодавство</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./protokolu.html" class="nav-item">Протоколи</a>
+              </li>
+              <li class="nav-list">
+                <a href="./navch-tren-viddil.html" class="nav-item"
+                  >Навчально-тренувальний відділ</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./derzhavni-zakypivli.html" class="nav-item"
+                  >Державні закупівлі</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts">
+            <ul class="contacts-container">
+              <li class="contacts-list">
+                <a href="mailto:info@devstudio.com" class="contacts-item"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts-list">
+                <a href="tel:+110001111111" class="contacts-item"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <!-- <h1 class="hero-title">
+          Вiнницький обласний центр екстреної медичної допомоги та медицини
+          катастроф
+        </h1> -->
+        <img src="./images/logo1.png" alt="" class="hero-img" />
+      </div>
+      <section class="section slider">
+        <div class="container">
+          <div
+            class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+          >
+            <ul
+              class="swiper-wrapper"
+              id="swiper-wrapper-b10d929e7413978d3"
+              aria-live="polite"
+              style="
+                transition-duration: 0ms;
+                transform: translate3d(0px, 0px, 0px);
+              "
+            >
+              <li
+                class="swiper-slide swiper-slide-active"
+                style="width: 412px"
+                role="group"
+                aria-label="1 / 9"
+              >
+                <img src="./images/image1.jpg" alt="Image 1" />
+              </li>
+              <li
+                class="swiper-slide swiper-slide-next"
+                style="width: 412px"
+                role="group"
+                aria-label="2 / 9"
+              >
+                <img src="./images/image2.jpg" alt="Image 2" />
+              </li>
+              <li
+                class="swiper-slide"
+                style="width: 412px"
+                role="group"
+                aria-label="3 / 9"
+              >
+                <img src="./images/image3.jpg" alt="Image 3" />
+              </li>
+              <li
+                class="swiper-slide"
+                style="width: 412px"
+                role="group"
+                aria-label="4 / 9"
+              >
+                <img src="./images/image4.jpg" alt="Image 4" />
+              </li>
+              <li
+                class="swiper-slide"
+                style="width: 412px"
+                role="group"
+                aria-label="5 / 9"
+              >
+                <img src="./images/image5.jpg" alt="Image 5" />
+              </li>
+              <li
+                class="swiper-slide"
+                style="width: 412px"
+                role="group"
+                aria-label="6 / 9"
+              >
+                <img src="./images/image6.jpg" alt="Image 6" />
+              </li>
+            </ul>
+            <div
+              class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-bullets-dynamic"
+              style="width: 80px"
+            >
+              <span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main"
+                style="left: 32px"
+                aria-current="true"
+              ></span
+              ><span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active-next"
+                style="left: 32px"
+              ></span
+              ><span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next"
+                style="left: 32px"
+              ></span
+              ><span class="swiper-pagination-bullet" style="left: 32px"></span
+              ><span class="swiper-pagination-bullet" style="left: 32px"></span
+              ><span class="swiper-pagination-bullet" style="left: 32px"></span
+              ><span class="swiper-pagination-bullet" style="left: 32px"></span
+              ><span class="swiper-pagination-bullet" style="left: 32px"></span
+              ><span class="swiper-pagination-bullet" style="left: 32px"></span>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </section>
+      <section class="section algorutm-zvernenya">
+        <div class="container">
+          <img src="./images/algoritm.jpg" alt="" />
+        </div>
+      </section>
+      <section class="section gen">
+        <div class="container">
+          <h2 class="title-gen">
+            Новини Вiнницького обласного центру екстреної медичної допомоги та
+            медицини катастроф
+          </h2>
+          <div id="myModal" class="modal-img">
+            <span class="close-mod">&times;</span>
+            <img class="modal-content" id="modalImg" />
+          </div>
+          <img
+            class="thumbnail"
+            src="./images/news1.jpg"
+            onclick="openModal(this)"
+          />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+    <script src="./js/modal-image.js"></script>
+  </body>
+</html>
