@@ -22,185 +22,133 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <!-- Mobile menu -->
-        <div class="top top-mobile">
+    <header class="header header-mobile">
+      <!-- Mobile menu -->
+      <div class="container top top-mobile">
+        <a href="./index.html" class="nav-logo"
+          ><img src="./images/logo2.png" alt="" />
+        </a>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-humburger">
+            <use href="./symbol-defs.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle button-close js-close-menu">
+            <svg class="menu-close">
+              <use href="./symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="container-nav">
+            <ul class="nav-container">
+              <li class="nav-list">
+                <a href="./index.html" class="nav-item">Головна</a>
+              </li>
+              <li class="nav-list">
+                <a href="./stryctyra.html" class="nav-item">Структура</a>
+              </li>
+              <li class="nav-list">
+                <a href="./zakonodavstvo.html" class="nav-item"
+                  >Законодавство</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./protokolu.html" class="nav-item">Протоколи</a>
+              </li>
+              <li class="nav-list">
+                <a href="./navch-tren-viddil.html" class="nav-item"
+                  >Навчально-тренувальний відділ</a
+                >
+              </li>
+              <li class="nav-list">
+                <a href="./derzhavni-zakypivli.html" class="nav-item"
+                  >Державні закупівлі</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="down-content">
+            <address>
+              <ul class="contacts-container">
+                <li class="contacts-list">
+                  <a href="tel:380000000000" class="contacts-item"
+                    >+380000000000
+                  </a>
+                </li>
+                <li class="contacts-list">
+                  <a href="mailto:index@mail.com" class="contacts-item mail"
+                    >index@mail.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop-menu -->
+      <div class="container-desktop top top-desktop">
+        <nav class="nav">
           <a href="./index.html" class="nav-logo"
             ><img src="./images/logo2.png" alt="" />
           </a>
 
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="menu-humburger">
-              <use href="./symbol-defs.svg#icon-hamburger"></use>
-            </svg>
-          </button>
-
-          <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle button-close js-close-menu">
-              <svg class="menu-close">
-                <use href="./symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
-
-            <nav class="container-nav">
-              <ul class="nav-container">
-                <li class="nav-list">
-                  <a href="./index.html" class="nav-item">Головна</a>
-                </li>
-                <li class="nav-list">
-                  <a href="./stryctyra.html" class="nav-item">Структура</a>
-                </li>
-                <li class="nav-list">
-                  <a href="./zakonodavstvo.html" class="nav-item"
-                    >Законодавство</a
-                  >
-                </li>
-                <li class="nav-list">
-                  <a href="./protokolu.html" class="nav-item">Протоколи</a>
-                </li>
-                <li class="nav-list">
-                  <a href="./navch-tren-viddil.html" class="nav-item"
-                    >Навчально-тренувальний відділ</a
-                  >
-                </li>
-                <li class="nav-list">
-                  <a href="./derzhavni-zakypivli.html" class="nav-item"
-                    >Державні закупівлі</a
-                  >
-                </li>
-              </ul>
-            </nav>
-
-            <div class="down-content">
-              <address>
-                <ul class="contacts-container">
-                  <li class="contacts-list">
-                    <a href="tel:+380000000000" class="contacts-item"
-                      >+380000000000
-                    </a>
-                  </li>
-                  <li class="contacts-list">
-                    <a href="mailto:index@mail.com" class="contacts-item mail"
-                      >index@mail.com
-                    </a>
-                  </li>
-                </ul>
-              </address>
-            </div>
-          </div>
-        </div>
-        <!-- Tablet-menu -->
-        <div class="top top-tablet">
-          <a href="./index.html" class="nav-logo"
-            >Web <span class="nav-logo-dark"> Studio</span>
-          </a>
-
-          <nav class="nav">
-            <ul class="nav-container">
-              <li class="nav-list">
-                <a href="./index.html" class="nav-item">Головна</a>
-              </li>
-              <li class="nav-list">
-                <a href="./stryctyra.html" class="nav-item">Структура</a>
-              </li>
-              <li class="nav-list">
-                <a href="./zakonodavstvo.html" class="nav-item"
-                  >Законодавство</a
-                >
-              </li>
-              <li class="nav-list">
-                <a href="./protokolu.html" class="nav-item">Протоколи</a>
-              </li>
-              <li class="nav-list">
-                <a href="./navch-tren-viddil.html" class="nav-item"
-                  >Навчально-тренувальний відділ</a
-                >
-              </li>
-              <li class="nav-list">
-                <a href="./derzhavni-zakypivli.html" class="nav-item"
-                  >Державні закупівлі</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <address class="contacts">
-            <ul class="contacts-container">
-              <li class="contacts-list">
-                <a href="mailto:info@devstudio.com" class="contacts-item"
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts-list">
-                <a href="tel:+110001111111" class="contacts-item"
-                  >+11 (000) 111-11-11
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <!-- Desktop-menu -->
-        <div class="top top-desktop">
-          <nav class="nav">
-            <a href="./index.html" class="nav-logo"
-              >Web <span class="nav-logo-dark"> Studio</span>
-            </a>
-
-            <ul class="nav-container">
-              <li class="nav-list">
-                <a href="./index.html" class="nav-item">Головна</a>
-              </li>
-              <li class="nav-list">
-                <a href="./stryctyra.html" class="nav-item">Структура</a>
-              </li>
-              <li class="nav-list">
-                <a href="./zakonodavstvo.html" class="nav-item"
-                  >Законодавство</a
-                >
-              </li>
-              <li class="nav-list">
-                <a href="./protokolu.html" class="nav-item">Протоколи</a>
-              </li>
-              <li class="nav-list">
-                <a href="./navch-tren-viddil.html" class="nav-item"
-                  >Навчально-тренувальний відділ</a
-                >
-              </li>
-              <li class="nav-list">
-                <a href="./derzhavni-zakypivli.html" class="nav-item"
-                  >Державні закупівлі</a
-                >
-              </li>
-            </ul>
-          </nav>
-          <address class="contacts">
-            <ul class="contacts-container">
-              <li class="contacts-list">
-                <a href="mailto:info@devstudio.com" class="contacts-item"
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts-list">
-                <a href="tel:+110001111111" class="contacts-item"
-                  >+11 (000) 111-11-11
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
+          <ul class="nav-container">
+            <li class="nav-list">
+              <a href="./index.html" class="nav-item">Головна</a>
+            </li>
+            <li class="nav-list">
+              <a href="./stryctyra.html" class="nav-item">Структура</a>
+            </li>
+            <li class="nav-list">
+              <a href="./zakonodavstvo.html" class="nav-item">Законодавство</a>
+            </li>
+            <li class="nav-list">
+              <a href="./protokolu.html" class="nav-item">Протоколи</a>
+            </li>
+            <li class="nav-list">
+              <a href="./navch-tren-viddil.html" class="nav-item"
+                >Навчально-тренувальний<br />
+                відділ</a
+              >
+            </li>
+            <li class="nav-list">
+              <a href="./derzhavni-zakypivli.html" class="nav-item"
+                >Державні <br />
+                закупівлі</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-container">
+            <li class="contacts-list">
+              <a href="mailto:info@devstudio.com" class="contacts-item"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts-list">
+              <a href="tel:+110001111111" class="contacts-item"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
     <main>
-      <div class="hero">
-        <!-- <h1 class="hero-title">
-          Вiнницький обласний центр екстреної медичної допомоги та медицини
-          катастроф
-        </h1> -->
+      <div class="hero container">
+        <button type="button" class="hero-btn">
+          Записатись на консультацію
+        </button>
         <img src="./images/logo1.png" alt="" class="hero-img" />
       </div>
       <section class="section slider">
@@ -300,7 +248,7 @@
       </section>
       <section class="section algorutm-zvernenya">
         <div class="container">
-          <img src="./images/algoritm.jpg" alt="" />
+          <img src="./images/algoritm.jpg" alt="" class="algorutm-img" />
         </div>
       </section>
       <section class="section gen">
@@ -321,7 +269,71 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container-desktop footer-container">
+        <div class="up-footer">
+          <ul class="contacts-container">
+            <li class="contacts-list">
+              <a href="tel:380000000000" class="contacts-item"
+                >+380000000000
+              </a>
+            </li>
+            <li class="contacts-list">
+              <a href="mailto:index@mail.com" class="contacts-item mail"
+                >index@mail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-media-footer">
+          <p class="footer-media">Social media</p>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/symbols-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                <svg class="footer-icon" width="24" height="19">
+                  <use href="./images/symbols-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/symbols-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/symbols-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container-form">
+          <p class="text-footer">Subscribe</p>
+          <form class="subscribe" autocomplete="on">
+            <div class="subscribe-container">
+              <input type="email" class="input-footer" placeholder="E-mail" />
+              <button type="submit" class="form-footer-button">
+                Subscribe
+                <svg class="subscribe-icon">
+                  <use href="./images/symbols-defs.svg#icon-telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
     <script src="./js/modal.js"></script>
     <script
       defer
@@ -332,9 +344,9 @@
     <script defer src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper('.mySwiper', {
         pagination: {
-          el: ".swiper-pagination",
+          el: '.swiper-pagination',
           dynamicBullets: true,
         },
       });
