@@ -26,7 +26,7 @@
       <!-- Mobile menu -->
       <div class="container top top-mobile">
         <a href="./index.html" class="nav-logo"
-          ><img src="./images/logo2.png" alt="" />
+          ><img src="./images/logo.png" alt="" class="logo" />
         </a>
 
         <button
@@ -52,7 +52,7 @@
                 <a href="./index.html" class="nav-item">Головна</a>
               </li>
               <li class="nav-list">
-                <a href="./stryctyra.html" class="nav-item">Структура</a>
+                <a href="./stryktyra.html" class="nav-item">Структура</a>
               </li>
               <li class="nav-list">
                 <a href="./zakonodavstvo.html" class="nav-item"
@@ -98,7 +98,7 @@
       <div class="container-desktop top top-desktop">
         <nav class="nav">
           <a href="./index.html" class="nav-logo"
-            ><img src="./images/logo2.png" alt="" />
+            ><img src="./images/logo.png" alt="" />
           </a>
 
           <ul class="nav-container">
@@ -106,7 +106,7 @@
               <a href="./index.html" class="nav-item">Головна</a>
             </li>
             <li class="nav-list">
-              <a href="./stryctyra.html" class="nav-item">Структура</a>
+              <a href="./stryktyra.html" class="nav-item">Структура</a>
             </li>
             <li class="nav-list">
               <a href="./zakonodavstvo.html" class="nav-item">Законодавство</a>
@@ -146,10 +146,12 @@
     </header>
     <main>
       <div class="hero container">
-        <button type="button" class="hero-btn">
-          Записатись на консультацію
+        <h1 class="hero-title">
+          КНП "Хмільницька центральна лікарня" Хмільницької міської ради
+        </h1>
+        <button type="button" class="hero-btn" data-modal-open>
+          Поставити запитання
         </button>
-        <img src="./images/logo1.png" alt="" class="hero-img" />
       </div>
       <section class="section slider">
         <div class="container">
@@ -169,49 +171,36 @@
                 class="swiper-slide swiper-slide-active"
                 style="width: 412px"
                 role="group"
-                aria-label="1 / 9"
               >
-                <img src="./images/image1.jpg" alt="Image 1" />
+                <img src="./images/swiper-1.jpg" alt="Image 1" />
               </li>
               <li
-                class="swiper-slide swiper-slide-next"
+                class="swiper-slide swiper-slide-active"
                 style="width: 412px"
                 role="group"
-                aria-label="2 / 9"
               >
-                <img src="./images/image2.jpg" alt="Image 2" />
+                <img src="./images/swiper-2.jpg" alt="Image 1" />
               </li>
               <li
-                class="swiper-slide"
+                class="swiper-slide swiper-slide-active"
                 style="width: 412px"
                 role="group"
-                aria-label="3 / 9"
               >
-                <img src="./images/image3.jpg" alt="Image 3" />
+                <img src="./images/swiper-3.jpg" alt="Image 1" />
               </li>
               <li
-                class="swiper-slide"
+                class="swiper-slide swiper-slide-active"
                 style="width: 412px"
                 role="group"
-                aria-label="4 / 9"
               >
-                <img src="./images/image4.jpg" alt="Image 4" />
+                <img src="./images/swiper-4.jpg" alt="Image 1" />
               </li>
               <li
-                class="swiper-slide"
+                class="swiper-slide swiper-slide-active"
                 style="width: 412px"
                 role="group"
-                aria-label="5 / 9"
               >
-                <img src="./images/image5.jpg" alt="Image 5" />
-              </li>
-              <li
-                class="swiper-slide"
-                style="width: 412px"
-                role="group"
-                aria-label="6 / 9"
-              >
-                <img src="./images/image6.jpg" alt="Image 6" />
+                <img src="./images/swiper-5.jpg" alt="Image 1" />
               </li>
             </ul>
             <div
@@ -246,94 +235,147 @@
           </div>
         </div>
       </section>
-      <section class="section algorutm-zvernenya">
-        <div class="container">
-          <img src="./images/algoritm.jpg" alt="" class="algorutm-img" />
-        </div>
-      </section>
       <section class="section gen">
         <div class="container">
-          <h2 class="title-gen">
-            Новини Вiнницького обласного центру екстреної медичної допомоги та
-            медицини катастроф
-          </h2>
-          <div id="myModal" class="modal-img">
-            <span class="close-mod">&times;</span>
-            <img class="modal-content" id="modalImg" />
-          </div>
-          <img
-            class="thumbnail"
-            src="./images/news1.jpg"
-            onclick="openModal(this)"
-          />
+          <ul>
+            <li class="container-gen">
+              <h2 class="title-gen">
+                Новини Вiнницького обласного центру екстреної медичної допомоги
+                та медицини катастроф
+              </h2>
+              <div id="myModal" class="modal-img">
+                <span class="close-mod">&times;</span>
+                <img class="modal-content" id="modalImg" />
+              </div>
+              <img
+                class="thumbnail"
+                src="./images/news-1.jpg"
+                onclick="openModal(this)"
+              />
+            </li>
+            <li class="container-gen">
+              <h2 class="title-gen">
+                Новини Вiнницького обласного центру екстреної медичної допомоги
+                та медицини катастроф
+              </h2>
+              <div id="myModal" class="modal-img">
+                <span class="close-mod">&times;</span>
+                <img class="modal-content" id="modalImg" />
+              </div>
+              <img
+                class="thumbnail"
+                src="./images/news-2.jpg"
+                onclick="openModal(this)"
+              />
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container-desktop footer-container">
-        <div class="up-footer">
-          <ul class="contacts-container">
-            <li class="contacts-list">
-              <a href="tel:380000000000" class="contacts-item"
-                >+380000000000
-              </a>
-            </li>
-            <li class="contacts-list">
-              <a href="mailto:index@mail.com" class="contacts-item mail"
-                >index@mail.com
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="social-media-footer">
-          <p class="footer-media">Social media</p>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/symbols-defs.svg#icon-instagram"></use>
+        <div class="footer-socials">
+          <p class="footer-socials-text">Social media</p>
+          <ul class="footer-socials-container">
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link">
+                <svg class="footer-socials-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <svg class="footer-icon" width="24" height="19">
-                  <use href="./images/symbols-defs.svg#icon-twitter"></use>
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link">
+                <svg class="footer-socials-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/symbols-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-item">
-              <a href="#" class="footer-link">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/symbols-defs.svg#icon-linkedin"></use>
+            <li class="footer-socials-item">
+              <a href="#" class="footer-socials-link">
+                <svg class="footer-socials-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-container-form">
-          <p class="text-footer">Subscribe</p>
-          <form class="subscribe" autocomplete="on">
-            <div class="subscribe-container">
-              <input type="email" class="input-footer" placeholder="E-mail" />
-              <button type="submit" class="form-footer-button">
-                Subscribe
-                <svg class="subscribe-icon">
-                  <use href="./images/symbols-defs.svg#icon-telegram"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+        <div class="geo">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.342963014585!2d27.941987515698447!3d49.53467877935946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d9ee0ef1b96ff%3A0x18a09cc99f1ce2ab!2sKhmelnitsky%20central%20district%20hospital!5e0!3m2!1sen!2sua!4v1686488446172!5m2!1sen!2sua"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </footer>
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form>
+          <b class="modal-text"> Поставити питання </b>
+
+          <label class="modal-form-item">
+            <span class="modal-label-text label-name">Ім'я</span>
+            <input type="text" name="name" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-item">
+            <span class="modal-label-text">Телефон</span>
+            <input type="tel" name="tel" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-item">
+            <span class="modal-label-text">Пошта</span>
+            <input type="email" name="mail" class="modal-input" />
+            <svg class="modal-input-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-item">
+            <span class="modal-label-text">Питання</span>
+            <textarea
+              type="textarea"
+              name="comment"
+              class="modal-input modal-textarea"
+              placeholder="Введіть питання"
+            ></textarea>
+          </label>
+
+          <label class="label-privacy">
+            <input
+              type="checkbox"
+              name="privacy"
+              class="input-privacy is-hidden"
+            />
+            <span class="check-icon"> </span>
+            <span class="modal-label-text-privacy">
+              I accept the terms and conditions of the
+              <a href="#" class="privacy-link"> Privacy Policy</a>.
+            </span>
+          </label>
+
+          <button type="submit" class="btn-submit">Send</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script
       defer
