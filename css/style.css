@@ -794,6 +794,7 @@ address {
   height: 100%;
   visibility: visible;
   padding: 16px;
+  z-index: 99;
 
   background-color: rgba(46, 47, 66, 0.4);
 
