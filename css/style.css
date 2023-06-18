@@ -798,6 +798,7 @@ address {
 }
 
 .modal-btn {
+  padding: 8px;
   display: flex;
   position: absolute;
   top: 24px;
