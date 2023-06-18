@@ -120,6 +120,7 @@ address {
   align-items: center;
   height: 50px;
   width: 43px;
+  margin-right: 70px;
 }
 .nav-logo-dark {
   color: var(--dark);
@@ -326,8 +327,8 @@ address {
   .nav-item {
     display: block;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 28px;
     width: auto;
     text-align: center;
 
@@ -377,8 +378,8 @@ address {
   .nav-item {
     display: block;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 22px;
     width: auto;
     text-align: center;
 
